@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new CameraFragment()); //fragmentleri ekliyoruz //index 0
         adapter.addFragment(new HomeFragment()); //index 1
         adapter.addFragment(new MessagesFragment()); //index 2
+
         ViewPager viewPager=findViewById(R.id.container);
         viewPager.setAdapter(adapter);
         TabLayout tabLayout=findViewById(R.id.topToolbar);
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_insta);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_arrow);
+
     }
 
 
