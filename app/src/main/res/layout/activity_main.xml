@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- üst toolbar -->
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_top_tabs" />
+
+        </RelativeLayout>
+        <!-- orta kısım (gövde) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative2"
+            android:layout_below="@+id/relative1">
+            <include layout="@layout/layout_ortakisim"/>
+
+
+
+        </RelativeLayout>
+
+        <!-- bottom navigation -->
+        <include layout="@layout/button_navigation_arayuz"/>
+
+
+    </RelativeLayout>
+
+
+    <!-- coordinatorlayoutu kullanma sebebi buttonaciton vs şeylerin uyumlu olması için -->
+
+</android.support.design.widget.CoordinatorLayout>
