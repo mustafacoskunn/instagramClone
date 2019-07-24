@@ -1,4 +1,4 @@
-package ornek.uygulama.com.instagramklon.Home;
+package ornek.uygulama.com.instagramklon.Utils;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

@@ -6,12 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TableLayout;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import ornek.uygulama.com.instagramklon.R;
 import ornek.uygulama.com.instagramklon.Utils.BottomNavigationViewHelper;
+import ornek.uygulama.com.instagramklon.Utils.PagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 

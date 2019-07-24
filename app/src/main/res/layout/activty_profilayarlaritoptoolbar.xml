@@ -27,6 +27,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginEnd="20dp"
+                    android:id="@+id/geriImageview"
 
                     app:srcCompat="@drawable/ic_geri" />
             </RelativeLayout>

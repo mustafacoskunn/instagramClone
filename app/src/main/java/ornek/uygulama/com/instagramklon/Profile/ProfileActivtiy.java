@@ -11,9 +11,15 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.ProgressBar;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+
+import java.util.ArrayList;
 
 import ornek.uygulama.com.instagramklon.R;
 import ornek.uygulama.com.instagramklon.Utils.BottomNavigationViewHelper;
@@ -28,7 +34,13 @@ public class ProfileActivtiy extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
        BottomNavigationArayuz();
         toolbarKurulum();
+
+        ProgressBar progressBar;
+        progressBar=findViewById(R.id.profilProgress);
+        progressBar.setVisibility(View.GONE);
+
     }
+
     private void toolbarKurulum(){
         Toolbar toolbar=findViewById(R.id.profileToolbar);
         setSupportActionBar(toolbar);
@@ -42,6 +54,7 @@ public class ProfileActivtiy extends AppCompatActivity {
                         System.out.println("menuye tıklandı");
                 }
                 return false;
+
             }
         });
 
@@ -66,6 +79,7 @@ public class ProfileActivtiy extends AppCompatActivity {
         menuItem.setChecked(true);
 
     }
+
 
 
 }
