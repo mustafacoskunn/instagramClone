@@ -30,6 +30,7 @@ public class hesapayarlari extends AppCompatActivity {
 
     private static final String TAG ="hesapayarlari" ;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -50,6 +51,9 @@ public class hesapayarlari extends AppCompatActivity {
         relativeLayout=findViewById(R.id.relative1);
         listviewFragmentKurulum();
         listviewDoldur();
+
+
+
     }
     private ayarlarStatePagerAdapter ayarlarStatePagerAdapter;
     private ViewPager viewPager;
@@ -63,7 +67,7 @@ public class hesapayarlari extends AppCompatActivity {
     }
     private void setViewPager(int fragmentNumber){
         relativeLayout.setVisibility(View.GONE);
-       
+
 
         viewPager.setAdapter(ayarlarStatePagerAdapter);
         viewPager.setCurrentItem(fragmentNumber);

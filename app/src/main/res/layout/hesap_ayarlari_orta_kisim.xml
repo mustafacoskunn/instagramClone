@@ -11,14 +11,16 @@
             android:padding="20dp">
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
+
                 android:id="@+id/profile_image"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/ic_android"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="65dp"
                 app:civ_border_width="2dp"
                 android:layout_centerHorizontal="true"
-                app:civ_border_color="#FF000000"/>
+                app:civ_border_color="#FF000000"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -36,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_below="@+id/textprofil"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/beyaz_gri_cerceve_altkisim"
                 android:id="@+id/reel1"
                 >
@@ -199,7 +201,7 @@
                     android:id="@+id/telefonNo"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="40dp"
-                    android:inputType="textNoSuggestions"
+                    android:inputType="number"
                     android:hint="Telefon Numarası"
 
                     />

@@ -20,12 +20,12 @@ public class ayarlarStatePagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int i) {
-        return null;
+        return mfragmentList.get(i);
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return mfragmentList.size();
     }
     public void fragmentEkle(Fragment fragment ,String fragmentName ){ //dışardan eklemek için public
         mfragmentList.add(fragment);

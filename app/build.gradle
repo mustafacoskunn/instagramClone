@@ -28,5 +28,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0' //material design
     implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4' // bottom navigtion animasyon https://github.com/ittianyu/BottomNavigationViewEx
     implementation 'de.hdodenhof:circleimageview:3.0.0' //yuvarlak imageview kütüphanesi
+    //Universal image loader
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
 }
