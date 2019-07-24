@@ -1,5 +1,7 @@
 package ornek.uygulama.com.instagramklon.Profile;
 
+import android.content.Context;
+import android.content.Intent;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +10,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
@@ -16,6 +20,7 @@ import ornek.uygulama.com.instagramklon.Utils.BottomNavigationViewHelper;
 
 public class ProfileActivtiy extends AppCompatActivity {
     private  static final int ACTIVTY_NUM=4;
+    private Context mContext=ProfileActivtiy.this;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -39,6 +44,16 @@ public class ProfileActivtiy extends AppCompatActivity {
                 return false;
             }
         });
+
+        ImageView profilAyarlariImageView;
+        profilAyarlariImageView=findViewById(R.id.profilAyarlariImageView);
+        profilAyarlariImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(mContext,hesapayarlari.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //BottomNavigation ayarları
@@ -52,10 +67,5 @@ public class ProfileActivtiy extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.menu.profile_menu,menu);
-        return true;
-    }
 }
