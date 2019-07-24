@@ -1,0 +1,29 @@
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <RelativeLayout
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:padding="20dp"
+      android:background="#FFFFFF"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Hesap Ayarları"
+          android:id="@+id/textAyarlar"
+          android:textColor="@color/siyah"
+          android:textSize="40dp"
+          android:background="@drawable/beyaz_gri_cerceve_altkisim"
+          />
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/textAyarlar"
+          ></ListView>
+
+
+  </RelativeLayout>
+
+
+</merge>

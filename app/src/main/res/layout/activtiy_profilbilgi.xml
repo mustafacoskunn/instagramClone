@@ -1,0 +1,123 @@
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relativelayout1"
+
+
+            >
+            <include layout="@layout/profil_top_bar"/></RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativelayout1"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout"
+                android:weightSum="100">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:layout_marginStart="25dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_android"
+                        android:layout_marginTop="15dp"
+                        app:civ_border_width="2dp"
+                        android:layout_centerHorizontal="true"
+                        app:civ_border_color="#FF000000"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80">
+                    <include layout="@layout/top_profil_gorunum"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout2"
+                android:padding="15dp"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profilName"
+                    android:text="Mustafa Coşkun"
+                    android:textStyle="bold"
+                    android:textColor="@color/siyah"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aciklama"
+
+                    android:text="SDÜ"
+                    android:textColor="@color/siyah"
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/link"
+
+
+                    android:text="www.sdu.edu.tr"
+                    android:textColor="#0000FF"
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginBottom="50dp">
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:verticalSpacing="1dp"
+
+                    ></GridView>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</merge>
