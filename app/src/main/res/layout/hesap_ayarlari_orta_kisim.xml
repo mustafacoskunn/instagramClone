@@ -1,0 +1,219 @@
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_android"
+                android:layout_marginTop="15dp"
+                app:civ_border_width="2dp"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textprofil"
+                android:text="Profil Fotoğrafını Değiştir"
+                android:textColor="#0000FF"
+                android:layout_below="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textprofil"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/beyaz_gri_cerceve_altkisim"
+                android:id="@+id/reel1"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_kaydet"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/kullaniciAdi"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Kullanıcı Adı"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/reel1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/beyaz_gri_cerceve_altkisim"
+                android:id="@+id/reel2"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_kaydet"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:inputType="textNoSuggestions"
+                    android:hint="İsim"
+
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/reel2"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/beyaz_gri_cerceve_altkisim"
+                android:id="@+id/reel3"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_kaydet"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/website"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Web Site"
+
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/reel3"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/beyaz_gri_cerceve_altkisim"
+                android:id="@+id/reel4"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_kaydet"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profilAciklama"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Biyografi"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gizliBilgiText"
+                android:text="Gizli Bilgiler"
+                android:layout_below="@id/reel4"
+                android:layout_marginTop="40dp"
+                android:textSize="35dp"
+                android:textColor="@color/siyah"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/beyaz_gri_cerceve_altkisim"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/gizliBilgiText"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/beyaz_gri_cerceve_altkisim"
+                android:id="@+id/reel5"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_kaydet"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:inputType="textNoSuggestions"
+                    android:hint="E-Mail Adresi"
+
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/reel5"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/beyaz_gri_cerceve_altkisim"
+                android:id="@+id/reel6"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_kaydet"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefonNo"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Telefon Numarası"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</merge>

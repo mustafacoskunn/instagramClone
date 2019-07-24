@@ -16,6 +16,7 @@ public class ProfilDuzenleFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_profil_duzenle,container,false);
+        System.out.println("çalıştı");
         return view;
     }
 }
