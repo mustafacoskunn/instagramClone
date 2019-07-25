@@ -17,8 +17,8 @@ public class LikeActivty extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        BottomNavigationArayuz();
+        setContentView(R.layout.activity_login);
+      //  BottomNavigationArayuz();
     }
     //BottomNavigation ayarları
     private void BottomNavigationArayuz(){

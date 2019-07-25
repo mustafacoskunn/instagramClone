@@ -16,8 +16,8 @@ public class SearchActivty extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        BottomNavigationArayuz();
+        setContentView(R.layout.activity_register);
+        //BottomNavigationArayuz();
     }
     //BottomNavigation ayarları
     private void BottomNavigationArayuz(){
