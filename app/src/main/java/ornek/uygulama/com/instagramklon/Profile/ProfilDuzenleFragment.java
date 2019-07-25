@@ -7,17 +7,26 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 import android.widget.ImageView;
 
+import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
+import java.util.ArrayList;
+
+import ornek.uygulama.com.instagramklon.Home.MainActivity;
 import ornek.uygulama.com.instagramklon.R;
+import ornek.uygulama.com.instagramklon.Utils.BottomNavigationViewHelper;
 import ornek.uygulama.com.instagramklon.Utils.UniversalImageLoader;
 
 public class ProfilDuzenleFragment extends Fragment {
     private static final String TAG = "ProfilDuzenleFragment"; //bunu unutma logt
+
 
 
     private ImageView imageView;
@@ -37,17 +46,16 @@ public class ProfilDuzenleFragment extends Fragment {
                 getActivity().finish();
             }
         });
-        initImageLoader();
+
+
 
         setProfileImage();
         return view;
     }
 
 
-    private void initImageLoader(){
-        UniversalImageLoader universalImageLoader = new UniversalImageLoader(getActivity());
-        ImageLoader.getInstance().init(universalImageLoader.getConfig());
-    }
+
+
 
     private void setProfileImage(){
 

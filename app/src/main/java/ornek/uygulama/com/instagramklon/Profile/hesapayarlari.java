@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -22,13 +23,16 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import java.util.ArrayList;
 
+import ornek.uygulama.com.instagramklon.Home.MainActivity;
 import ornek.uygulama.com.instagramklon.R;
 import ornek.uygulama.com.instagramklon.Utils.BottomNavigationViewHelper;
+import ornek.uygulama.com.instagramklon.Utils.GridImageAdapter;
 import ornek.uygulama.com.instagramklon.Utils.ayarlarStatePagerAdapter;
 
 public class hesapayarlari extends AppCompatActivity {
 
     private static final String TAG ="hesapayarlari" ;
+    private  static final int ACTIVTY_NUM=4;
 
 
     @Override
@@ -51,6 +55,8 @@ public class hesapayarlari extends AppCompatActivity {
         relativeLayout=findViewById(R.id.relative1);
         listviewFragmentKurulum();
         listviewDoldur();
+
+        BottomNavigationArayuz();
 
 
 
@@ -88,6 +94,16 @@ public class hesapayarlari extends AppCompatActivity {
         });
 
     }
+    private void BottomNavigationArayuz(){
+        BottomNavigationViewEx bottomNavigationViewEx=(BottomNavigationViewEx) findViewById(R.id.bottomnavi);// 3. kütüphanenin animasyonunun kullanmak için
+        BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationViewEx);
+        BottomNavigationViewHelper.enableNavigation(getApplicationContext(),bottomNavigationViewEx);
+        Menu menu=bottomNavigationViewEx.getMenu();
+        MenuItem menuItem=menu.getItem(ACTIVTY_NUM);
+        menuItem.setChecked(true);
+
+    }
+
 
 
 

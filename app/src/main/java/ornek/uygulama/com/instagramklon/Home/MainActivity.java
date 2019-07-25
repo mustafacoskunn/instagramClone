@@ -8,10 +8,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import ornek.uygulama.com.instagramklon.R;
 import ornek.uygulama.com.instagramklon.Utils.BottomNavigationViewHelper;
 import ornek.uygulama.com.instagramklon.Utils.PagerAdapter;
+import ornek.uygulama.com.instagramklon.Utils.UniversalImageLoader;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,9 +26,17 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationArayuz();
         viewPagerKurulum();
+        initImageLoader();
+
 
 
     }
+
+    private void initImageLoader(){
+        UniversalImageLoader universalImageLoader = new UniversalImageLoader(getApplicationContext());
+        ImageLoader.getInstance().init(universalImageLoader.getConfig());
+    }
+
     //3 tane fragment ekle camera home messages
     private void viewPagerKurulum( ){
         PagerAdapter adapter=new PagerAdapter(getSupportFragmentManager());
